@@ -1,4 +1,4 @@
-package ...;
+package au.edu.curtin.islandbuilder;
 
 /**
  * Represents a single grid square in the map. Each map element has both terrain and an optional

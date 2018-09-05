@@ -1,4 +1,4 @@
-package ...;
+package au.edu.curtin.islandbuilder;
 
 import java.util.Random;
 

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/topLeftImage"
+        android:src="@color/colorRed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/topRightImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomLeftImage" />
+
+    <ImageView
+        android:id="@+id/topRightImage"
+        android:src="@color/colorGreen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintLeft_toRightOf="@id/topLeftImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomRightImage" />
+
+    <ImageView
+        android:id="@+id/bottomLeftImage"
+        android:src="@color/colorBlue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/bottomRightImage"
+        app:layout_constraintTop_toBottomOf="@id/topLeftImage"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/bottomRightImage"
+        android:src="@color/colorYellow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintLeft_toRightOf="@id/bottomLeftImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topRightImage"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/structureImage"
+        android:src="@color/colorMagenta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</android.support.constraint.ConstraintLayout>
